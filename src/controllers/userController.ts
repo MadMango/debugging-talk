@@ -1,4 +1,4 @@
-const faker = require('faker');
+import * as faker from 'faker'
 
 const generateRandomUser = () => ({
   name: faker.name.firstName(),
@@ -15,4 +15,7 @@ const users = {
 const getAllUsers = () => users
 const getUserName = userNameID => users[userNameID].name
 
-module.exports = { getAllUsers, getUserName }
+export {
+  getAllUsers,
+  getUserName
+}
