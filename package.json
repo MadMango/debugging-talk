@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node ./bin/www",
     "start:watch": "tsc-watch --onSuccess 'node ./bin/www' --onFailure 'echo Compile Failed' --compiler typescript/bin/tsc",
-    "start:watch:debug": "tsc-watch --onSuccess 'node ./bin/www' --onFailure 'echo Compile Failed' --compiler typescript/bin/tsc",
+    "start:watch:debug": "tsc-watch --onSuccess 'node --inspect ./bin/www' --onFailure 'echo Compile Failed' --compiler typescript/bin/tsc",
     "build": "tsc"
   },
   "dependencies": {
