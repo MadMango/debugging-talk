@@ -1,1 +1,1 @@
-# debugging-talk
+The vscode config hasn't changed but if you look in `package.json`, we're using `tsc-watch` to run the app in inspect mode and handle compiling, restarting on changes etc.

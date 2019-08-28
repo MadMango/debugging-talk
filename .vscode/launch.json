@@ -10,12 +10,6 @@
       "request": "attach",
       "port": 9229,
       "restart": true
-    },
-    {
-      "type": "node",
-      "request": "launch",
-      "name": "Launch Program",
-      "program": "${workspaceFolder}/bin/www"
     }
   ]
 }
