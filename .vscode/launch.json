@@ -5,10 +5,11 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Attach to Process",
       "type": "node",
-      "request": "launch",
-      "name": "Launch Program",
-      "program": "${workspaceFolder}/bin/www"
+      "request": "attach",
+      "port": 9229,
+      "restart": true
     },
     {
       "name": "Docker: Attach to Node",
@@ -17,7 +18,8 @@
       "port": 9229,
       "address": "localhost",
       "localRoot": "${workspaceFolder}",
-      "remoteRoot": "/"
+      "remoteRoot": "/usr/src/app",
+      "restart": true
     }
   ]
 }
