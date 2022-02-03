@@ -13,6 +13,9 @@ const users = {
 };
 
 const getAllUsers = () => users;
-const getUserName = (userNameID) => users[userNameID].name;
+const getUserName = (userNameID) => {
+  const userName = users[userNameID].name;
+  return userName;
+};
 
 module.exports = { getAllUsers, getUserName };
